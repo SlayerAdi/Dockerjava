@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub-login') // Jenkins credentials ID
+        DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds') // Jenkins credentials ID
         IMAGE_NAME = "silver595/java-docker-automation"               // Docker Hub repo
         IMAGE_TAG = "latest"
     }
